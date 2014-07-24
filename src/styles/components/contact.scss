@@ -1,0 +1,47 @@
+/* ==========================================================================
+   news page style
+   ========================================================================== */
+
+.contact {
+	background-color: $panel-background-color;
+	padding: 20px;
+	display: none;
+}
+
+.contact-details, 
+.contact-form {
+	@include border-radius(10px);
+	@include box-shadow(0 4px 0 0 $light-grey);
+	background: $light-grey-alt;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.item {
+	margin-bottom: 20px;
+	width: 50%;
+
+	.item-label {
+		display: block;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	.item-input,
+	.item-textarea {
+		width: 100%;
+		padding: 4px 6px;
+		display: block;
+	}
+
+	.item-input {
+		height: 23px;
+	}
+
+	.item-textarea {
+		height: 100px;
+	}
+
+	.btn {
+	}
+}

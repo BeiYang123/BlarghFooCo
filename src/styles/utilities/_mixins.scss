@@ -1,0 +1,50 @@
+@mixin border-radius ($radius) {
+	-webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($x) {
+	-moz-box-shadow:    $x;
+	-webkit-box-shadow: $x;
+	box-shadow:         $x;
+	
+}
+
+@mixin box-sizing($x) {
+	-webkit-box-sizing: $x;
+	-moz-box-sizing: $x;
+	box-sizing: $x;
+}
+
+@mixin color-gradient($color1, $color2) {
+  background: -webkit-linear-gradient($color1, $color2); /* For Safari 5.1+, Mobile Safari, Chrome 10+ */
+  background: -o-linear-gradient($color1, $color2); /* For Opera 11.1+ */
+  background: -moz-linear-gradient($color1, $color2); /* For Firefox 3.6+ */
+  background: -ms-linear-gradient($color1, $color2); /* For IE 10+ */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=" + $color1 + ", endColorstr=" + $color2 + ")"; /* For IE 8+ */
+  filter: unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr=" + $color1 + ", endColorstr=" + $color2 + ")"); /* For IE 6 - 8 */
+  background: linear-gradient($color1, $color2); /* Standard syntax */
+}
+
+@mixin selectable($value) {
+	-webkit-user-select: $value;
+      -ms-user-select: $value;
+          user-select: $value;
+
+	@if $value == "none" {
+		-moz-user-select: -moz-none;
+	}
+	@else {
+		-moz-user-select: "text";
+	}
+}
+
+@mixin transition($x) {
+	-webkit-transition: $x;
+    -moz-transition: $x;
+    -o-transition: $x;
+    transition: $x;
+}

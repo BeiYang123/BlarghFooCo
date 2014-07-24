@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Header style
+   ========================================================================== */
+.header {
+	background-color: $header-background-color;
+	padding: 20px 0;
+
+	.header-text-panel {
+		display: inline-block;
+		text-align: right;
+	}
+	
+	.header-heading {
+		font-family: $heading-font-family;
+		font-weight: normal;
+		line-height: 1.5em;
+		margin: 0;
+	}
+
+	.header-sub-heading {
+		margin: 0;
+	}
+}

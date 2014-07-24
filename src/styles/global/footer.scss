@@ -1,0 +1,15 @@
+/* ==========================================================================
+   footer section style
+   ========================================================================== */
+.footer {
+	background-color: $footer-background-color;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	.footer-text {
+		float: right;
+		padding: 20px 0;
+	}
+}

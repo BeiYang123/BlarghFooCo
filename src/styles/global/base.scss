@@ -1,0 +1,36 @@
+/* ==========================================================================
+   HTML global style
+   ========================================================================== */ 
+body {   
+    color: $default-font-color;
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    margin: 0;
+    background-color: $body-background-color;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+	display: table;
+	content: '';
+}
+
+.clearfix:after,
+.container:after {
+	clear: both;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
