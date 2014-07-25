@@ -2,7 +2,7 @@ Get Started
 
 Install npm package http-server
 
-> npm package -g http-server
+> npm install -g http-server (or sudo npm install -g http-server )
 
 Start http-server under your project folder, it will show you the port no (eg,8080)
 
